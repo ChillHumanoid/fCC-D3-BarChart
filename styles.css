@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Roboto+Slab&display=swap');
+
+body {
+  background: #1623D6;
+  background: -webkit-radial-gradient(center, #1623D6, #77E5E1);
+  background: -moz-radial-gradient(center, #1623D6, #77E5E1);
+  background: radial-gradient(ellipse at center, #1623D6, #77E5E1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: -45px;
+  font-family: 'Roboto Slab', serif;
+}
+
+svg {
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+rect {
+  fill: #ff7675;
+}
+
+rect:hover {
+  opacity: 0.2;
+}
+
+.container {
+  position: relative;
+}
+
+.tooltip {
+  background-color: #eaeaea;
+  display: none;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  height: 70px;
+  width: 150px;
+  z-index: 100;
+  text-align: center;
+}
+
+.tooltip.show {
+  display: flex;
+}
+
+.tooltip small {
+  margin-bottom: 5px;
+}
+
+.footer {
+  color: #2d3436;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-family: 'Chivo Mono', monospace;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #3B3B98;
+}
+
+.footer a:hover {
+  color: #FC427B;
+}
